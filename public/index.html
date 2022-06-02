@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Scribble Game</title>
+  </head>
+  <body>
+    <section id="playArea">
+      <div class="topBar">
+        <img src="./assets/chronometer.png" alt="clock" />
+        <p>Time remaining:</p>
+        <p class="time">24</p>
+        <p class="attention"></p>
+      </div>
+      <div class="playerList"></div>
+      <div class="drawArea">
+        <button id="clearCanvas">Clear Canvas</button>
+        <canvas id="drawBoard"> </canvas>
+      </div>
+      <div class="chatArea">
+        <div class="messages"></div>
+        <input
+          type="text"
+          name="userText"
+          id="userText"
+          placeholder="Type your guess here"
+        />
+      </div>
+    </section>
+    <div class="modal-overlay"></div>
+    <div class="modal">
+      <input
+        type="text"
+        name="userInput"
+        id="userInput"
+        placeholder="Enter your username"
+        class="userCreatedName"
+      />
+      <input
+        type="text"
+        name="randomNumber"
+        id="randomInput"
+        class=""
+        placeholder=""
+      />
+      <button class="connection">Join</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./client.js"></script>
+  </body>
+</html>
