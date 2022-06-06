@@ -1,3 +1,5 @@
+![Representation](./ezgif.com-gif-maker.gif)
+
 ## Implementation
 
 - Implemented from scratch in Vanilla Js
